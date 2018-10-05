@@ -10,39 +10,31 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping(value = "/student")
 public class StudentController {
 	
-	@RequestMapping(value = "/student", method = RequestMethod.GET)
-	public StudentEntity getStudent() throws ServletException {
-		
-		return null;
-	}
-	
-	@RequestMapping(value = "/student", method = RequestMethod.POST)
-	public void setStudent(StudentEntity student) throws ServletException {
-		
-	}
-	
-	@RequestMapping(value = "/student", method = RequestMethod.DELETE)
-	public void deleteStudent(StudentEntity student) throws ServletException {
-		
-	}
-	@RequestMapping(value = "/students", method = RequestMethod.GET)
+	@RequestMapping( method = RequestMethod.GET)
 	public List<StudentEntity> getAllStudents() throws ServletException {
 		
 		return null;
 	}
 	
-	@RequestMapping(value = "/students", method = RequestMethod.POST)
-	public void setStudents(List<StudentEntity> lStudent) throws ServletException {
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	public StudentEntity getStudent() throws ServletException {
+		
+		return null;
+	}
+	
+	@RequestMapping( method = RequestMethod.POST)
+	public void setStudent(StudentEntity student) throws ServletException {
 		
 	}
 	
-	@RequestMapping(value = "/students", method = RequestMethod.DELETE)
-	public void deleteStudents(List<StudentEntity> lStudent) throws ServletException {
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	public void deleteStudent() throws ServletException {
 		
 	}
-	
+
 	
 	
 }
