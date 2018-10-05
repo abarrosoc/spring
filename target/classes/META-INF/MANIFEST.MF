@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: demo-jwt
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: abarroso
+Implementation-Vendor-Id: com.autentia.demo.jwt
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/demo-jwt/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

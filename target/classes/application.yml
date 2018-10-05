@@ -1,0 +1,16 @@
+server:
+  port: 8761
+  
+spring:
+  name: eureka-server
+  
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    
+  zuul:
+routes:
+  foos:
+    path: /usr/**
+    url: http://localhost:8081/spring-zuul-foos-resource/foos
